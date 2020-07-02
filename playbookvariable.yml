@@ -1,0 +1,9 @@
+- hosts: linux
+  vars:
+    test: welcome to ansible training
+    Test: lab is on aws
+  tasks:
+  - name: print varaiable
+    debug: msg="{{ test }}"
+  - name: print another varaiable
+    debug: msg="{{ Test }}"
